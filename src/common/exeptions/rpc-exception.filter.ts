@@ -19,7 +19,7 @@ export class ExceptionFilter implements RpcExceptionFilter<RpcException> {
     let message = 'Internal server error';
 
     if (rpcError.toString().includes('There are no subscribers')) {
-      message = 'No subscribers found listening to this message';
+      message = 'No subscribers found listening to this message.';
     }
 
     if (
